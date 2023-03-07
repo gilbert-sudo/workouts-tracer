@@ -10,7 +10,7 @@ export const useLogin = () => {
     setError(null);
     setIsLoading(true);
 
-    const response = await fetch("https://workoutstracer-api.onrender.com/api/user/login", {
+    const response = await fetch(`${process.env.REACT_APP_PROXY}/api/user/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

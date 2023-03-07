@@ -14,7 +14,7 @@ const WorkoutDetails = ({ workout }) => {
       return 
     }
 
-    const response = await fetch('https://workoutstracer-api.onrender.com/api/workouts/' + workout._id, {
+    const response = await fetch(`${process.env.REACT_APP_PROXY}/api/workouts/` + workout._id, {
       method: 'DELETE',
       headers: { 
         'Authorization': `Bearer ${user.token}`,

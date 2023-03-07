@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch("https://workoutstracer-api.onrender.com/api/workouts", {
+      const response = await fetch(`${process.env.REACT_APP_PROXY}/api/workouts`, {
         headers: {
           "Access-Control-Allow-Origin": "*",
           Authorization: `Bearer ${user.token}`,
