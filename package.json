@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:3000",
+  "proxy": "https://workoutstracer-api.onrender.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
