@@ -14,6 +14,7 @@ const Home = () => {
     const fetchWorkouts = async () => {
       const response = await fetch("/api/workouts", {
         headers: {
+          "Access-Control-Allow-Origin": "*",
           Authorization: `Bearer ${user.token}`,
         },
       });
